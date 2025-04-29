@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-color: #151515;
+    color: white;
+    height: 100vh;
+    position: relative;
+}
+
+/* Logo lá em cima */
+.imgdog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2E2C30;
+    width: 160px;
+    height: 48px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgdog img {
+    width: 120px;
+    height: 24px;
+}
+
+/* Centralizando só o quadrado */
+.agendamento {
+    width: 871px;
+    height: 768px;
+    background-color: darksalmon;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
