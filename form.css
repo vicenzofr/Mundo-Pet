@@ -1,0 +1,130 @@
+/*
+ font-family: "Inter Tight", sans-serif; 
+ font-family: "Inter", sans-serif;
+ */
+
+.form{
+    width: 540px;
+    height: 740px;
+    background-color: #23242C;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.content{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.form h2 {
+    font-family: "Inter Tight", sans-serif; 
+    font-size: 24px;
+    /* margin-top: 40px; */
+
+}
+
+.form p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* espaço entre os campos */
+}
+
+.forms > div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+label{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+
+/* INPUTS */
+
+#name-tutor, #name-pet, #cellphone{
+    width: 397px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid #98959D;
+    padding-left: 44px; 
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.icon-tutor, .icon-pet, .icon-tell {
+    position: relative;
+  }
+  
+  .icon-tutor img, .icon-pet img, .icon-tell img {
+    position: absolute;
+    top: 55%;
+    left: 12px;
+    transform: translateY(-50%);
+    width: 20px; /* ajuste conforme o tamanho do seu ícone */
+    height: 20px;
+    pointer-events: none;
+  }
+  
+  #descri-serv{
+    width: 397px;
+    height: 83px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid #98959D;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+
+
+#date-hour {
+    display: flex; 
+    gap: 20px; 
+}
+
+#data, #hora {
+    width: 190px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid #98959D;
+    padding-left: 44px; 
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    
+}
+
+.icon-data, .icon-hour {
+    position: relative;
+}
+
+.icon-data input, .icon-hour input {
+    width: 100%; 
+    height: 35px; 
+    padding-left: 30px;  
+    box-sizing: border-box;
+}
+
+.icon-data img, .icon-hour img {
+    position: absolute;
+    left: 10px;  
+    top: 55%; 
+    transform: translateY(-50%);  
+    width: 20px; 
+}
