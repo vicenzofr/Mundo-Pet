@@ -39,7 +39,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);    
-    display: none;
+    /* display: none; */
 }
 
 
@@ -128,7 +128,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* SEASON */
 
-.season{
+.season-morning, .season-after, .season-night{
     width: 100%;
     height: auto;
     background-color: #23242C;
@@ -179,35 +179,35 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     gap: 20px;
 }
 
-#hour{
+.hour{
     font-family: "Inter", sans-serif;
     font-size: 16px;
     margin-left: 30px;
 }
 
-#name-dog{
+.name-dog{
     font-family: "Inter", sans-serif;
     font-size: 14px;
 }
 
-#division{
+.division{
     color: #98959D;
 }
 
-#name-human{
+.name-human{
     font-family: "Inter", sans-serif;
     font-size: 16px;
     color: #98959D;
 }
 
-#objective{
+.objective{
     font-family: "Inter", sans-serif;
     font-size: 14px;
     color: #98959D;
     margin-left: 20%;
 }
 
-#remove-item{
+.remove-item{
     border: none;
     background-color: transparent;
     color: #98959D;
@@ -217,7 +217,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-left: 15%;
 }
 
-#remove-item:hover{
+.remove-item:hover{
     color: red;
 }
 
@@ -228,7 +228,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 100%;
     display: flex;
     justify-content: flex-end; /* mantém à direita */
-    /* margin-top: 20px; */
 }
 
 #new-agend {

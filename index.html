@@ -1,163 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="form.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    
-    <title>Mundo Pet</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mundo Pet</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="form.css" />
 </head>
 <body>
-    <div class="imgdog">
-        <img src="img/Frame 48095946.png" alt="">
-    </div>
-    
-<div class="centralizar">
+
+  <div class="imgdog">
+    <img src="img/Frame 48095946.png" alt="Imagem de cachorro" />
+  </div>
+
+  <div class="centralizar">
     <div class="agendamento">
-        <div class="title-container">
-            <div class="title-text">
-              <h1>Sua agenda</h1>
-              <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
-            </div>
-            <div class="custom-date">
-                <span class="icon-left">
-                  <img src="icon/Calendar-Minimalistic--Streamline-Solar.png" alt="">
-                </span>
-                <input type="date" id="date">
-                <span class="icon-right">
-                  <img src="icon/Icon.png" alt="">
-                </span>
-              </div>
-              
-          </div>
-          
-        <!-- MANHA  -->
-        <div class="season">
-            <div class="title">
-                <img src="icon/Sun Fog.png" alt="">
-                <h3>Manhã</h1>
-                <p>09h-12h</p>        
-            </div>
-            <div class="linha"></div>
-           
-            <div class="atividade">
-                <h2 id="hour">09:00</h2>
-                <h2 id="name-dog">Thor</h2>
-                <p id="division">/</p>
-                <p id="name-human">Fernanda Costa</p>
-                <p id="objective">Vacina</p>
-                <button id="remove-item">Remover agendamento</button>
-            </div> 
+      <div class="title-container">
+        <div class="title-text">
+          <h1>Sua agenda</h1>
+          <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
         </div>
-
-
-        <!-- TARDE -->
-        <div class="season">
-            <div class="title">
-                <img src="icon/Cloud-Sun-4--Streamline-Solar.png" alt="">
-                <h3>Tarde</h1>
-                <p>13h-18h</p> 
-            </div>
-            <div class="linha"></div>
-           
-            <div class="atividade">
-                <h2 id="hour">13:00</h2>
-                <h2 id="name-dog">Thor</h2>
-                <p id="division">/</p>
-                <p id="name-human">Fernanda Costa</p>
-                <p id="objective">Vacina</p>
-                <button id="remove-item">Remover agendamento</button>
-            </div>    
+        <div class="custom-date">
+          <span class="icon-left">
+            <img src="icon/Calendar-Minimalistic--Streamline-Solar.png" alt="Ícone de calendário" />
+          </span>
+          <input type="date" id="date" />
+          <span class="icon-right">
+            <img src="icon/Icon.png" alt="Ícone de filtro" />
+          </span>
         </div>
+      </div>
 
-        <!-- NOITE -->
-        <div class="season">
-            <div class="title">
-                <img src="icon/Moon Stars.png" alt="">
-                <h3>Noite</h1>
-                <p>19h-21h</p> 
-            </div>
-            <div class="linha"></div>
-           
-            <div class="atividade">
-                <h2 id="hour">20:00</h2>
-                <h2 id="name-dog">Thor</h2>
-                <p id="division">/</p>
-                <p id="name-human">Fernanda Costa</p>
-                <p id="objective">Vacina</p>
-                <button id="remove-item">Remover agendamento</button>
-            </div>  
+      <!-- MANHÃ -->
+      <div class="season-morning">
+        <div class="title">
+          <img src="icon/Sun Fog.png" alt="Ícone sol" />
+          <h3>Manhã</h3>
+          <p>09h-12h</p>
         </div>
-        
+        <div class="linha"></div>
 
-        
+        <div class="atividade">
+          <h2 class="hour">09:00</h2>
+          <h2 class="name-dog">Thor</h2>
+          <p class="division">/</p>
+          <p class="name-human">Fernanda Costa</p>
+          <p class="objective">Vacina</p>
+          <button class="remove-item">Remover agendamento</button>
+        </div>
+      </div>
+
+      <!-- TARDE -->
+      <div class="season-after">
+        <div class="title">
+          <img src="icon/Cloud-Sun-4--Streamline-Solar.png" alt="Ícone sol nublado" />
+          <h3>Tarde</h3>
+          <p>13h-18h</p>
+        </div>
+        <div class="linha"></div>
+
+        <div class="atividade">
+          <h2 class="hour">13:00</h2>
+          <h2 class="name-dog">Thor</h2>
+          <p class="division">/</p>
+          <p class="name-human">Fernanda Costa</p>
+          <p class="objective">Vacina</p>
+          <button class="remove-item">Remover agendamento</button>
+        </div>
+      </div>
+
+      <!-- NOITE -->
+      <div class="season-night">
+        <div class="title">
+          <img src="icon/Moon Stars.png" alt="Ícone lua" />
+          <h3>Noite</h3>
+          <p>19h-21h</p>
+        </div>
+        <div class="linha"></div>
+
+        <div class="atividade">
+          <h2 class="hour">20:00</h2>
+          <h2 class="name-dog">Thor</h2>
+          <p class="division">/</p>
+          <p class="name-human">Fernanda Costa</p>
+          <p class="objective">Vacina</p>
+          <button class="remove-item">Remover agendamento</button>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
-<div class="button-new">
+  <!-- Botão Novo Agendamento -->
+  <div class="button-new">
     <button id="new-agend">NOVO AGENDAMENTO</button>
-</div>
+  </div>
 
-<div class="form">
+  <!-- Formulário -->
+  <div class="form">
     <div class="content">
+      <h2>Agende um atendimento</h2>
+      <p>Preencha os dados do cliente para realizar o agendamento:</p>
 
-        <h2>Agende um atendimento</h2>
-        <p>Preencha os dados do cliente para realizar o agendamento:</p>
+      <div class="forms">
+        <!-- Nome do Tutor -->
+        <div class="tutor">
+          <label for="name-tutor">Nome do tutor</label>
+          <div class="icon-tutor">
+            <img src="icon/User--Streamline-Solar.png" alt="Ícone usuário" />
+            <input type="text" id="name-tutor" placeholder="Helena Souza" />
+          </div>
+        </div>
 
-        <div class="forms">
-            <div id="tutor">
-                <label for="name-tutor">Nome do tutor</label>
-                <div class="icon-tutor">
-                    <img src="icon/User--Streamline-Solar.png" alt="">
-                    <input type="text" id="name-tutor" placeholder="Helena Souza">
+        <!-- Nome do Pet -->
+        <div class="pet">
+          <label for="name-pet">Nome do pet</label>
+          <div class="icon-pet">
+            <img src="icon/Pet-Paw--Streamline-Core.png" alt="Ícone patinha" />
+            <input type="text" id="name-pet" placeholder="Cheddar" />
+          </div>
+        </div>
+
+        <!-- Telefone -->
+        <div class="tell">
+          <label for="cellphone">Telefone</label>
+          <div class="icon-tell">
+            <img src="icon/Phone--Streamline-Solar.png" alt="Ícone telefone" />
+            <input type="tel" id="cellphone" placeholder="(00) 0 0000-0000" />
+          </div>
+        </div>
+
+        <!-- Descrição -->
+        <div class="descri">
+          <label for="descri-serv">Descrição do serviço</label>
+          <input type="text" id="descri-serv" placeholder="Banho e tosa" />
+        </div>
+
+        <!-- Data e Hora -->
+        <div id="date-hour">
+            <div class="box-data">
+                <label for="data">Data</label>
+                <div class="icon-data">
+                    <img src="icon/Calendar-Minimalistic--Streamline-Solar.png" alt="">
+                    <input type="date" id="data">
                 </div>
             </div>
-        
-            <div id="pet">
-                <label for="name-pet">Nome do pet</label>
-                <div class="icon-pet">
-                    <img src="icon/Pet-Paw--Streamline-Core.png" alt="">
-                    <input type="text" id="name-pet" placeholder="Cheddar">
-                </div>
-                
-            </div>
-        
-            <div id="tell">
-                <label for="cellphone">Telefone</label>
-                <div class="icon-tell">
-                    <img src="icon/Phone--Streamline-Solar.png" alt="">
-                    <input type="tel" id="cellphone" placeholder="(00) 0 0000-0000">
-                </div>
-            </div>
-        
-            <div id="descri">
-                <label for="descri-serv">Descricao do servico</label>
-                <input type="text" id="descri-serv" placeholder="Banho e tosa">
-            </div>
-        
-            <div id="date-hour">
-                <div id="Data">
-                    <label for="data">Data</label>
-                    <div class="icon-data">
-                        <img src="icon/Calendar-Minimalistic--Streamline-Solar.png" alt="">
-                        <input type="date" id="data">
-                    </div>
-                </div>
-                <div id="Hora">
-                    <label for="hora">Hora</label>
-                    <div class="icon-hour">
-                        <img src="icon/Clock-Circle--Streamline-Solar.png" alt="">
-                        <input type="time" id="hora">
-                    </div>
+            <div class="box-hora">
+                <label for="hora">Hora</label>
+                <div class="icon-hour">
+                    <img src="icon/Clock-Circle--Streamline-Solar.png" alt="">
+                    <input type="time" id="hora">
                 </div>
             </div>
         </div>
-    </div>
-  
-</div>
+        
 
+        <button id="agendar">AGENDAR</button>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>

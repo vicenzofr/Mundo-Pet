@@ -1,29 +1,24 @@
 /*
  font-family: "Inter Tight", sans-serif; 
  font-family: "Inter", sans-serif;
- */
+*/
 
-.form{
+.form {
     width: 540px;
     height: 740px;
     background-color: #23242C;
     border-radius: 12px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
+    margin: 40px auto 0 auto; /* margem no topo + centralização */
+    padding: 20px; /* só pra dar um respiro interno também */
+    display: none;
 }
-
-.content{
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 40px;
+.content {
+    margin: 0 40px 40px 40px;
 }
 
 .form h2 {
     font-family: "Inter Tight", sans-serif; 
     font-size: 24px;
-    /* margin-top: 40px; */
-
 }
 
 .form p {
@@ -31,11 +26,10 @@
     font-size: 14px;
 }
 
-
 .forms {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* espaço entre os campos */
+    gap: 20px;
 }
 
 .forms > div {
@@ -43,23 +37,22 @@
     flex-direction: column;
 }
 
-
-label{
+label {
     font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: bold;
-    
+    color: white;
 }
 
-/* INPUTS */
+/* INPUTS GERAIS */
 
-#name-tutor, #name-pet, #cellphone{
+#name-tutor, #name-pet, #cellphone {
     width: 397px;
     height: 48px;
     border-radius: 8px;
     background-color: transparent;
     border: 1px solid #98959D;
-    padding-left: 44px; 
+    padding-left: 44px;
     color: white;
     font-size: 16px;
     margin-top: 10px;
@@ -67,20 +60,22 @@ label{
 
 .icon-tutor, .icon-pet, .icon-tell {
     position: relative;
-  }
-  
-  .icon-tutor img, .icon-pet img, .icon-tell img {
+}
+
+.icon-tutor img, .icon-pet img, .icon-tell img {
     position: absolute;
     top: 55%;
     left: 12px;
     transform: translateY(-50%);
-    width: 20px; /* ajuste conforme o tamanho do seu ícone */
+    width: 20px;
     height: 20px;
     pointer-events: none;
-  }
-  
-  #descri-serv{
-    width: 397px;
+}
+
+/* TEXTAREA */
+
+#descri-serv {
+    width: 450px;
     height: 83px;
     border-radius: 8px;
     background-color: transparent;
@@ -88,43 +83,79 @@ label{
     color: white;
     font-size: 16px;
     margin-top: 10px;
-  }
-  
-
-
-#date-hour {
-    display: flex; 
-    gap: 20px; 
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+    
 }
 
-#data, #hora {
-    width: 190px;
-    height: 48px;
-    border-radius: 8px;
-    background-color: transparent;
-    border: 1px solid #98959D;
-    padding-left: 44px; 
-    color: white;
-    font-size: 16px;
-    margin-top: 10px;
-    
+
+
+
+/* DATA E HORA */
+#date-hour {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Se a tela for pequena, os campos descem */
+}
+
+.box-data, .box-hora {
+    display: flex;
+    flex-direction: column;
 }
 
 .icon-data, .icon-hour {
     position: relative;
 }
 
-.icon-data input, .icon-hour input {
-    width: 100%; 
-    height: 35px; 
-    padding-left: 30px;  
+.icon-data input,
+.icon-hour input {
+    width: 190px;
+    height: 48px;
+    padding-left: 44px;
+    border-radius: 8px;
+    border: 1px solid #98959D;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
     box-sizing: border-box;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
-.icon-data img, .icon-hour img {
+.icon-data img,
+.icon-hour img {
     position: absolute;
-    left: 10px;  
-    top: 55%; 
-    transform: translateY(-50%);  
-    width: 20px; 
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.forms > #date-hour {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#agendar{
+   width: 123px;
+   height: 48px; 
+   border-radius: 8px;
+   border: none;
+   font-family: "Inter", sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+   background-color: #9282FA;
+   margin-left: auto;
+   margin-top: 28px;
+   cursor: pointer;
 }
