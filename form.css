@@ -10,7 +10,7 @@
     border-radius: 12px;
     margin: 40px auto 0 auto; /* margem no topo + centralização */
     padding: 20px; /* só pra dar um respiro interno também */
-    display: none;
+    /* display: none; */
 }
 .content {
     margin: 0 40px 40px 40px;

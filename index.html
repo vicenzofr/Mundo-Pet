@@ -99,11 +99,11 @@
 
   <!-- Botão Novo Agendamento -->
   <div class="button-new">
-    <button id="new-agend">NOVO AGENDAMENTO</button>
+    <button id="new-agend" onclick="log()">NOVO AGENDAMENTO</button>
   </div>
 
   <!-- Formulário -->
-  <div class="form">
+  <div class="form" style="display: none;">
     <div class="content">
       <h2>Agende um atendimento</h2>
       <p>Preencha os dados do cliente para realizar o agendamento:</p>
@@ -114,7 +114,7 @@
           <label for="name-tutor">Nome do tutor</label>
           <div class="icon-tutor">
             <img src="icon/User--Streamline-Solar.png" alt="Ícone usuário" />
-            <input type="text" id="name-tutor" placeholder="Helena Souza" />
+            <input type="text" id="name-tutor" placeholder="Helena Souza" required/>
           </div>
         </div>
 
@@ -123,7 +123,7 @@
           <label for="name-pet">Nome do pet</label>
           <div class="icon-pet">
             <img src="icon/Pet-Paw--Streamline-Core.png" alt="Ícone patinha" />
-            <input type="text" id="name-pet" placeholder="Cheddar" />
+            <input type="text" id="name-pet" placeholder="Cheddar" required/>
           </div>
         </div>
 
@@ -132,14 +132,14 @@
           <label for="cellphone">Telefone</label>
           <div class="icon-tell">
             <img src="icon/Phone--Streamline-Solar.png" alt="Ícone telefone" />
-            <input type="tel" id="cellphone" placeholder="(00) 0 0000-0000" />
+            <input type="tel" id="cellphone" placeholder="(00) 0 0000-0000" required/>
           </div>
         </div>
 
         <!-- Descrição -->
         <div class="descri">
           <label for="descri-serv">Descrição do serviço</label>
-          <input type="text" id="descri-serv" placeholder="Banho e tosa" />
+          <input type="text" id="descri-serv" placeholder="Banho e tosa" required/>
         </div>
 
         <!-- Data e Hora -->
@@ -161,10 +161,12 @@
         </div>
         
 
-        <button id="agendar">AGENDAR</button>
+        <button id="agendar" onclick="insert()">AGENDAR</button>
       </div>
     </div>
   </div>
 
+
+  <script src="index.js"></script>
 </body>
 </html>
