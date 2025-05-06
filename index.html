@@ -132,7 +132,8 @@
           <label for="cellphone">Telefone</label>
           <div class="icon-tell">
             <img src="icon/Phone--Streamline-Solar.png" alt="Ícone telefone" />
-            <input type="tel" id="cellphone" placeholder="(00) 0 0000-0000" required/>
+            <input type="tel" id="cellphone" placeholder="(00) 0 0000-0000"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required/>
           </div>
         </div>
 
@@ -160,9 +161,9 @@
             </div>
         </div>
         
-
-        <button id="agendar" onclick="insert()">AGENDAR</button>
+        <input type="submit" id="submit" onclick="insert()" required>
       </div>
+
     </div>
   </div>
 
