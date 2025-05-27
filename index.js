@@ -1,3 +1,5 @@
+
+
 function log() {
     const formAgend = document.getElementsByClassName("form")[0];
     const otherSection = document.getElementsByClassName("agendamento")[0]; // ou qualquer outra seção que esteja visível
