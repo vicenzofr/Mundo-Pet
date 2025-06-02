@@ -1,3 +1,4 @@
+// document.getElementById("new-agend").addEventListener("click", log);
 
 
 function log() {
@@ -12,6 +13,7 @@ function log() {
         otherSection.style.display = "none";
     }
 }
+
 
 
 // ADICIONANDO NO FORM

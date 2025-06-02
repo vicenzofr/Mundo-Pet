@@ -1,5 +1,4 @@
 {
-  "name": "Mundo Pet",
   "description": "Aplicacao Web para agendamentos em Petshop",
   "author": "Vicenzo Fernandes Ribeiro",
   "scripts": {
@@ -25,4 +24,5 @@
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.1"
   }
+    
 }
