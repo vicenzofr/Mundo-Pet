@@ -12,6 +12,7 @@ export async function scheduleNew({ id, name, pet, telefone, descricao, hora, da
     });
 
     alert("Agendamento realizado com sucesso");
+    
   } catch (error) {
     console.log(error);
     alert("Não foi possível agendar, tente mais tarde");

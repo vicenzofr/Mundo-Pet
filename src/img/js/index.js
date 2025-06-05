@@ -64,6 +64,13 @@ document.addEventListener("DOMContentLoaded", function () {
       descriServ.value = "";
       date.value = "";
       hora.value = "";
+
+      // Esconde o formulário e mostra a tela inicial
+      formAgend.style.display = "none";
+      if (otherSection) {
+        otherSection.style.display = "block";
+      }
+
     } catch (error) {
       console.error(error);
       alert("Erro ao enviar agendamento.");
